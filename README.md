@@ -51,8 +51,8 @@ Mauritania Eye Hypervision Mode is a comprehensive cybersecurity intelligence pl
 
 ```bash
 # Clone or download the Mauritania Eye framework
-git clone <repository-url>
-cd mauritania-eye-hypervision
+git clone https://github.com/mauritaniacoder99/Mauritania_Eye.git
+cd Mauritania_Eye
 
 # Run the automated installation script
 chmod +x install.sh
