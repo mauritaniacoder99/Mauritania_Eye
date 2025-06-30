@@ -1,0 +1,63 @@
+{
+  "general": {
+    "interface": "eth0",
+    "output_directory": "logs",
+    "verbose": false,
+    "auto_save": true
+  },
+  "packet_sniffer": {
+    "enabled": true,
+    "capture_duration": 60,
+    "filter": "",
+    "max_packets": 1000
+  },
+  "network_scanner": {
+    "enabled": true,
+    "scan_timeout": 30,
+    "port_range": "1-1000",
+    "scan_type": "syn"
+  },
+  "vulnerability_scanner": {
+    "enabled": true,
+    "nikto_enabled": true,
+    "custom_checks": true,
+    "scan_timeout": 300
+  },
+  "port_monitor": {
+    "enabled": true,
+    "monitoring_interval": 5,
+    "alert_threshold": 50
+  },
+  "spoofing_detector": {
+    "enabled": true,
+    "arp_monitoring": true,
+    "dns_monitoring": true,
+    "alert_sensitivity": "medium"
+  },
+  "geoip_analyzer": {
+    "enabled": true,
+    "use_online_api": true,
+    "cache_results": true
+  },
+  "device_fingerprinter": {
+    "enabled": true,
+    "os_detection": true,
+    "service_analysis": true
+  },
+  "system_monitor": {
+    "enabled": true,
+    "monitoring_interval": 2,
+    "resource_alerts": true
+  },
+  "alerts": {
+    "critical_threshold": 90,
+    "warning_threshold": 75,
+    "email_notifications": false,
+    "log_all_alerts": true
+  },
+  "reporting": {
+    "auto_generate": true,
+    "formats": ["json", "csv"],
+    "retention_days": 30
+  }
+}
